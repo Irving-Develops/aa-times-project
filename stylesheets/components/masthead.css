@@ -1,10 +1,14 @@
 /* Your code here */
+header {
+    padding: 0;
+}
 
 .masthead {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    /* grid-template-areas: 
+    grid-template-rows: 1fr .3fr 1.25fr;
+    /*
     "menu empty search"
     "empty tech empty"
     "date logo paper" */
@@ -13,6 +17,7 @@
 .masthead__menu-and-search {
     grid-area: 1;
     padding-left: 20px;
+    margin-left: 40px;
 }
 
 .masthead__actions {
@@ -20,10 +25,14 @@
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 40px;
+    padding-bottom: 15px;
 }
 
 .masthead__technologies {
     grid-area: 2/2;
+    height: 10px;
+    padding: 5px;
 }
 
 .masthead__date {
@@ -47,7 +56,53 @@
     padding: 7px 9px;
     width: 40px;
     height: 36px;
+
 }
 .masthead__buttons:hover {
     background-color:  #f7f7f5;
+}
+.masthead__technologies {
+    display: flex;
+    justify-content: space-around;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+
+}
+.tech {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6f6f6f;
+}
+
+.masthead__logo > img {
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+
+.masthead__date {
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 40px;
+
+}
+
+.masthead__paper {
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.masthead__logo,
+.masthead__date,
+.masthead__paper,
+.masthead__menu-and-search,
+.masthead__actions {
+    border-bottom: 1px solid #e2e2e2;
 }
