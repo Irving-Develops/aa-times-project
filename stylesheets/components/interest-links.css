@@ -12,19 +12,57 @@
 }
 
 .interests-bar__image {
-    width: 60%;
+    width: 70%;
 }
 
+/* content portion styles */
 .interests-bar__card {
     display: flex;
     flex-direction: column;
     height: 100px;
+    margin-right: 20px;
+    border-right: 1px solid #e2e2e2;
 }
-.interests-bar__headline > h4 {
+.interests-bar__headline > h5 {
     margin: 0 0 5px 0;
     padding: 0;
 }
 
 .interests-bar__story {
     max-width: 80%;
+}
+
+.interests-bar__story  p{
+    font-size: 11px;
+}
+
+/* stock price styles */
+.interests-bar__stats {
+margin-right: 10px;
+border-right: 1px solid #e2e2e2;
+
+}
+.interests-bar__container {
+    display: flex;
+    padding: 15px 0 3px 0;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.box2 {
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+.interests-bar__stats span {
+    font-size: 14px;
+}
+
+.interests-bar__price {
+    font-weight: bold;
+    font-size: 14px;
+    color: green;
+}
+.interests-bar__big-text {
+    font-weight:  bold;
+    
 }
