@@ -12,7 +12,8 @@ main {
     "header header"
     "content video"
     ;
-    padding-bottom: 100px;
+    margin-right: 35px;
+    border-right: 1px solid #e2e2e2;
 }
 
 .main__header {
@@ -22,26 +23,70 @@ main {
 .main-content__article {
     grid-area: content;
     padding-right: 10px;
+    padding-bottom: 100px;
 }
 
 .main-content__article ul {
     list-style-type: disc;
+    line-height: 16px;
 }
 .main-content__article li {
     padding-bottom: 10px;
 }
  #comments{
     color: #2a8bd6;
+    padding-bottom: 10px;
 }
-
- .main__video iframe {
-    width: 90%;
-    height: 90%;
-}
-
 .article__title {
     margin-bottom: 30px;
 }
+
+/* video styles */
+.main__video  { 
+    display: flex;
+    flex-direction: column;
+
+}
+  iframe {
+    width: 90%;
+    background-color: black;
+
+}
+
+
+/* sidebar styles */
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar-container h2 {
+    font-style: normal;
+    text-transform: capitalize;
+
+}
+
+.sidebar-container h4 {
+    font-size: 16px;
+}
+.sidebar-container p {
+    padding-bottom: 30px;
+}
+.sidebar-container #comments {
+    padding-bottom: 10px;
+}
+.sidebar-container .article {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e2e2;
+}
+#operations {
+    padding-bottom: 10px;
+}
+
+.article-img {
+    height: 80px;
+}
+
 
 /* lower articles styles */
 .lower__articles {
