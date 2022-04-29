@@ -1,1 +1,54 @@
 /* Your code here */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* main content styles */
+.main__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "header header"
+    "content video"
+    ;
+    padding-bottom: 100px;
+}
+
+.main__header {
+    grid-area: header;
+
+}
+.main-content__article {
+    grid-area: content;
+    padding-right: 10px;
+}
+
+.main-content__article ul {
+    list-style-type: disc;
+}
+.main-content__article li {
+    padding-bottom: 10px;
+}
+ #comments{
+    color: #2a8bd6;
+}
+
+ .main__video iframe {
+    width: 90%;
+    height: 90%;
+}
+
+.article__title {
+    margin-bottom: 30px;
+}
+
+/* lower articles styles */
+.lower__articles {
+    grid-column-start: 1;
+}
+.sidebar-container {
+    grid-row: 1/3;
+    grid-column: 2;
+}
+
