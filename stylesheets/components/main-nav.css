@@ -1,1 +1,19 @@
 /* Your code here */
+nav.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+nav.main > ul {
+    display: inline-flex;
+    justify-content: center;
+}
+.main > ul {
+    margin: 0;
+    padding: 0;
+}
+.main a {
+    font-size: 12px;
+    margin: 15px;
+}
+

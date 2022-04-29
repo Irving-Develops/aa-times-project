@@ -7,7 +7,7 @@ header {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr .3fr 1.25fr;
+    grid-template-rows: 1fr .3fr 2fr;
     /*
     "menu empty search"
     "empty tech empty"
@@ -25,6 +25,7 @@ header {
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 5px;
     margin-right: 40px;
     padding-bottom: 15px;
 }
